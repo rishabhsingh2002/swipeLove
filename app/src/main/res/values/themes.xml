@@ -1,0 +1,127 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Appsuccessor" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_primary</item>
+        <item name="colorSecondaryVariant">@color/color_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/color_primary</item>
+        <item name="colorControlActivated">@color/color_primary</item>
+    </style>
+
+    <style name="MyEditTextGender" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+    <!--    text styles-->
+
+    <style name="T1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dp32</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/rubic_bold</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="T2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dp36</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <!--    button styles-->
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/futura_medium</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/futura_medium</item>
+        <item name="android:background">@drawable/button_secondary_bg</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="ButtonInactive" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/futura_regulr</item>
+        <item name="android:background">@drawable/button_secondary_bg</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/primary_light_blue</item>
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="ButtonActive" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/futura_regulr</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="LookingForButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/futura_medium</item>
+        <item name="android:background">@drawable/button_looking_for_bg</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Appsuccessor" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#F7F9F7</item>
+    </style>
+
+    <style name="CustomCheckBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/black</item> <!-- for checked state -->
+        <item name="colorControlNormal">@color/primary_black_light
+        </item> <!-- for unchecked state -->
+    </style>
+
+    <style name="roundedCornersImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp16</item>
+    </style>
+
+
+</resources>

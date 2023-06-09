@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="@dimen/dp26"
+                android:src="@drawable/ic_intro_top" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp4"
+                android:fontFamily="@font/rubic_italic"
+                android:text="swipe"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/dp22" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubic_medium"
+                android:text="love"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/dp22" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTitle"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImageOne"
+            android:layout_width="@dimen/margin_140"
+            android:layout_height="@dimen/margin_140"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp32"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImageTwo"
+            android:layout_width="@dimen/margin_140"
+            android:layout_height="@dimen/margin_140"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp50"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImageOne"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImageTwo">
+
+            <TextView
+                style="@style/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/futura_medium"
+                android:text="It’s a match!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp28" />
+
+            <TextView
+                android:id="@+id/matchedUser"
+                style="@style/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp12"
+                android:fontFamily="@font/rubic_medium"
+                android:text="What are you waiting for? Text Ayushi now "
+                android:textColor="#99201E1F"
+                android:textSize="@dimen/dp28" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginBottom="-16dp"
+            android:layout_weight="6"
+            android:background="@drawable/matched_dialog_bg"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center_vertical"
+            android:hint="TELL THEM ABOUT YOUR DAY.."
+            android:inputType="text"
+            android:paddingStart="@dimen/dp32"
+
+            android:textColor="@color/black"
+            android:textColorHint="#66201E1F"
+            android:textSize="@dimen/dp14"
+            android:theme="@style/MyEditText"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

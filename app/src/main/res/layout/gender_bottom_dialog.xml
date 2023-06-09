@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/exitDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginEnd="@dimen/dp16"
+        android:src="@drawable/ic_dismiss_dialog" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="@drawable/gender_dialog_bg"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/groupRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp32"
+                android:layout_marginTop="@dimen/dp32">
+
+                <RadioButton
+                    android:id="@+id/man"
+                    style="@style/T2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_primary"
+                    android:fontFamily="@font/futura_regulr"
+                    android:padding="@dimen/dp8"
+                    android:text="Man"
+                    android:textSize="@dimen/dp18" />
+
+                <RadioButton
+                    android:id="@+id/women"
+                    style="@style/T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_primary"
+                    android:fontFamily="@font/futura_regulr"
+                    android:padding="@dimen/dp8"
+                    android:text="Women"
+                    android:textSize="@dimen/dp18" />
+
+                <RadioButton
+                    android:id="@+id/transgenderWomen"
+                    style="@style/T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_primary"
+                    android:fontFamily="@font/futura_regulr"
+                    android:padding="@dimen/dp8"
+                    android:text="Transgender Woman"
+                    android:textSize="@dimen/dp18" />
+
+                <RadioButton
+                    android:id="@+id/transgenderMan"
+                    style="@style/T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_primary"
+                    android:fontFamily="@font/futura_regulr"
+                    android:padding="@dimen/dp8"
+                    android:text="Transgender Man"
+                    android:textSize="@dimen/dp18" />
+
+                <RadioButton
+                    android:id="@+id/nonBinary"
+                    style="@style/T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_primary"
+                    android:fontFamily="@font/futura_regulr"
+                    android:padding="@dimen/dp8"
+                    android:text="Non - binary"
+                    android:textSize="@dimen/dp18" />
+
+                <RadioButton
+                    android:id="@+id/others"
+                    style="@style/T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_primary"
+                    android:fontFamily="@font/futura_regulr"
+                    android:padding="@dimen/dp8"
+                    android:text="Other (Please Specify)"
+                    android:textSize="@dimen/dp18" />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/genderInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_marginStart="@dimen/dp70"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp32"
+                android:layout_marginBottom="@dimen/margin_48"
+                android:background="@drawable/gender_input_bg"
+                android:fontFamily="@font/futura_regulr"
+                android:gravity="start"
+                android:hint="Type here..."
+                android:inputType="text"
+                android:padding="@dimen/dp8"
+                android:textColor="@color/primary_light_blue"
+                android:textColorHint="#4D201E1F"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/dp18"
+                android:theme="@style/MyEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

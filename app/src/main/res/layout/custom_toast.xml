@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/primary_white">
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/T2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_regulr"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/login_sub_description"
+        android:textColor="#F2542D"
+        android:textSize="@dimen/dp16" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

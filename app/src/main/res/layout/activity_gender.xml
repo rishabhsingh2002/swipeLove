@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_white"
+    tools:context=".ui.activity.auth.GenderActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/margin_48"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_gender_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/margin_155"
+            android:layout_height="145dp"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/margin_48"
+            android:src="@drawable/ic_gender_visual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp24"
+            android:fontFamily="@font/futura_medium"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/gender_title"
+            android:textSize="@dimen/dp32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/T2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp12"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/gender_description"
+            android:textColor="@color/primary_grey"
+            android:textSize="@dimen/dp18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <LinearLayout
+                android:id="@+id/male"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/margin_115"
+                android:layout_marginEnd="@dimen/dp32"
+                android:background="@drawable/not_selected_gender_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp70"
+                    android:src="@drawable/ic_gender_male" />
+
+                <TextView
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:fontFamily="@font/futura_regulr"
+                    android:gravity="center"
+                    android:text="@string/male"
+                    android:textSize="@dimen/dp14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/female"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/margin_115"
+                android:layout_marginStart="@dimen/dp32"
+                android:background="@drawable/not_selected_gender_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp70"
+                    android:src="@drawable/ic_gender_female" />
+
+                <TextView
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:fontFamily="@font/futura_regulr"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textSize="@dimen/dp14" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down" />
+
+            <TextView
+                android:id="@+id/genderSelectedOnBottomSheet"
+                style="@style/T2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futura_regulr"
+                android:text="Other"
+                android:textColor="#201E1F"
+                android:textSize="@dimen/dp16" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp36"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center"
+            android:text="BACK"
+            android:textColor="@color/primary_grey"
+            android:textSize="@dimen/dp16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            style="@style/ButtonInactive"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp32"
+            android:height="@dimen/margin_10"
+            android:clickable="false"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

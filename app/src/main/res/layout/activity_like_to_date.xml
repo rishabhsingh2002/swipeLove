@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_white"
+    tools:context=".ui.activity.auth.LikeToDateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/margin_48"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_like_to_date_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp24"
+            android:fontFamily="@font/futura_medium"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text="@string/like_to_date_title"
+            android:textSize="@dimen/dp32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/T2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp12"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/like_to_date_subtitle"
+            android:textColor="@color/primary_grey"
+            android:textSize="@dimen/dp18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/manLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/man"
+                    style="@style/CustomCheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/tvMan"
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/futura_regulr"
+                    android:text="Man"
+                    android:textColor="@color/primary_grey"
+                    android:textSize="@dimen/dp18" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/womanLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/woman"
+                    style="@style/CustomCheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/tvWoman"
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/futura_regulr"
+                    android:text="Woman"
+                    android:textColor="@color/primary_grey"
+                    android:textSize="@dimen/dp18" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/transGenderWomanLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/transgenderWoman"
+                    style="@style/CustomCheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/tvTransgenderWoman"
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/futura_regulr"
+                    android:text="Transgender Woman"
+                    android:textColor="@color/primary_grey"
+                    android:textSize="@dimen/dp18" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/transgenderManLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/transgenderMan"
+                    style="@style/CustomCheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/tvTransgenderMan"
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/futura_regulr"
+                    android:text="Transgender Man"
+                    android:textColor="@color/primary_grey"
+                    android:textSize="@dimen/dp18" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/nonBinaryLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/nonBinary"
+                    style="@style/CustomCheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/tvNonBinary"
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/futura_regulr"
+                    android:text="Non - binary"
+                    android:textColor="@color/primary_grey"
+                    android:textSize="@dimen/dp18" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/otherLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/other"
+                    style="@style/CustomCheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/tvOther"
+                    style="@style/T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/futura_regulr"
+                    android:text="Other (Please Specify)"
+                    android:textColor="@color/primary_grey"
+                    android:textSize="@dimen/dp18" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <EditText
+                android:id="@+id/enteredGender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp42"
+                android:layout_marginStart="@dimen/margin_48"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp32"
+                android:background="@drawable/edit_text_gender_selector"
+                android:fontFamily="@font/futura_regulr"
+                android:hint="Type here..."
+                android:inputType="text"
+                android:paddingStart="@dimen/dp16"
+                android:textColor="@color/black"
+                android:textColorHint="#66201E1F"
+                android:textSize="@dimen/dp18"
+                android:theme="@style/MyEditTextGender" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp36"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center"
+            android:text="BACK"
+            android:textColor="@color/primary_grey"
+            android:textSize="@dimen/dp16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            style="@style/ButtonInactive"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp32"
+            android:height="@dimen/margin_10"
+            android:clickable="false"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

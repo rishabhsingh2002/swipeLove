@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parendLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dp24">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        style="@style/T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubic_medium"
+                        android:text="Aditya,"
+                        android:textColor="@color/primary_black"
+                        android:textSize="@dimen/dp26" />
+
+                    <TextView
+                        android:id="@+id/age"
+                        style="@style/T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp4"
+                        android:fontFamily="@font/rubic_italic"
+                        android:text="25"
+                        android:textColor="@color/primary_black"
+                        android:textSize="@dimen/margin_20" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayoutCompat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        style="@style/T1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/home_text_bg"
+                        android:fontFamily="@font/futura_heavy"
+                        android:paddingHorizontal="@dimen/dp16"
+                        android:paddingVertical="@dimen/dp12"
+                        android:text="50% match"
+                        android:textColor="@color/color_primary"
+                        android:textSize="@dimen/dp16" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp16"
+                        android:layout_height="@dimen/dp16"
+                        android:src="@drawable/ic_active_user" />
+
+                    <TextView
+                        style="@style/T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp6"
+                        android:fontFamily="@font/rubic_italic"
+                        android:text="Active User"
+                        android:textColor="#58BC82"
+                        android:textSize="@dimen/dp12" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/llMainImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/dp4"
+            android:layout_marginBottom="@dimen/dp24"
+            android:layout_marginTop="@dimen/dp8"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llProfile">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:id="@+id/llSecond"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginHorizontal="@dimen/dp4"-->
+        <!--            android:layout_marginBottom="@dimen/dp32"-->
+        <!--            android:elevation="8dp"-->
+        <!--            app:cardCornerRadius="16dp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/llLast"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent">-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/userSecondImage"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="350dp"-->
+        <!--                android:scaleType="centerCrop"-->
+        <!--                android:src="@drawable/ic_user" />-->
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/llLast"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/margin_48"-->
+        <!--            android:layout_marginBottom="@dimen/dp32"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="64dp"-->
+        <!--                android:layout_height="64dp"-->
+        <!--                android:layout_marginEnd="@dimen/dp16"-->
+        <!--                android:src="@drawable/ic_red_cross" />-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="64dp"-->
+        <!--                android:layout_height="64dp"-->
+        <!--                android:layout_marginStart="@dimen/dp16"-->
+        <!--                android:src="@drawable/ic_green_tick" />-->
+
+        <!--        </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

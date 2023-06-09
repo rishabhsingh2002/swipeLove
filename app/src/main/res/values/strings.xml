@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Swipeluv</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dating">Dating</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="favourite">Favourite</string>
+    <string name="intro_title">Hi,\nLet’s get started!</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="phone_title">What Is Your Phone\nNumber?</string>
+    <string name="phone_description">Phone verification helps us in authentication</string>
+    <string name="otp_title">Enter OTP</string>
+    <string name="otp_description">Please enter the 6-digit code sent to\nyour number.</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="emai_title">What Is Your Email ?</string>
+    <string name="email_description">Email is required in the case of account\nrecovery.</string>
+    <string name="location_title">Enable Location\nServices</string>
+    <string name="location_description">To fully enjoy the app\'s features, please enable location services on your device.</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="name_title">May I Know Your\nName Please?</string>
+    <string name="dob_title">When Were You\nBorn?</string>
+    <string name="gender_title">What’s Your Gender?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender_description">Pick the which gender best describes you</string>
+    <string name="info_title">Your profile = less\nempty inbox.</string>
+    <string name="info_description">"Hi It's good to meet you. Let us know your dating preferences.</string>
+    <string name="dating_preferences">Dating Preferences</string>
+    <string name="splash_title">Right Swipe for the Right One</string>
+    <string name="login_sub_description">Our current user base is in India only.</string>
+    <string name="title_activity_info_one">InfoOneActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="info_one_title">Our matchmaking algorithm is waiting for you - give it something to work with!</string>
+    <string name="build_my_profile">BUILD MY PROFILE</string>
+    <string name="name_description">This will be displayed on your Profile</string>
+    <string name="dob_description">Your age will be displayed in your profile.</string>
+    <string name="profile_picture_title">Upload your best\npictures 📸.</string>
+    <string name="profile_picture_description">Minimum 2 pictures is required.</string>
+    <string name="story_title">What’s your story? ✍️</string>
+    <string name="story_description">Write small text that best describes you.</string>
+    <string name="looking_for_title">What are you\nlooking for 🔎 ?</string>
+    <string name="looking_for_subtitle">Tell us about your relationships goals!</string>
+    <string name="casual_dating">Casual Dating</string>
+    <string name="serious_relationships">Serious relationships</string>
+    <string name="good_conversations">Good conversations</string>
+    <string name="i_don_t_know_yet">I don’t Know Yet</string>
+    <string name="like_to_date_title">Who would you like\nto date🎯?</string>
+    <string name="like_to_date_subtitle">This will be displayed on your profile.</string>
+    <string name="location_range_title">Location range📌</string>
+    <string name="location_range_subtitle">We’ll show you profiles within this range.</string>
+    <string name="info_three_title">Find someone who\nlaughs at your terrible\njokes too - Take our\n<u>Personality test!</u></string>
+    <string name="info_four_title">Welcome to our\ncommunity of\nsingles!</string>
+    <string name="explore">Explore</string>
+    <string name="likes">Likes</string>
+    <string name="chat">Chat</string>
+</resources>

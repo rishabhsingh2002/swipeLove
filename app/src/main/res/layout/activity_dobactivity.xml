@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_white"
+    tools:context=".ui.activity.auth.DOBActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/margin_48"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_dob_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/margin_155"
+            android:layout_height="@dimen/margin_140"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/margin_48"
+            android:src="@drawable/ic_dob_visual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp24"
+            android:fontFamily="@font/futura_medium"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/dob_title"
+            android:textSize="@dimen/dp32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/T2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp12"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/dob_description"
+            android:textColor="#66201E1F"
+            android:textSize="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/userDob"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp42"
+            android:layout_marginHorizontal="@dimen/dp28"
+            android:layout_marginTop="@dimen/dp24"
+            android:background="@drawable/edit_text_bg_selected"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="start|center"
+            android:hint="_ _ / _ _ / _ _ _ _"
+            android:inputType="none"
+            android:paddingStart="@dimen/dp24"
+            android:textColor="@color/color_primary"
+            android:textColorHint="@color/color_primary"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/dp18"
+            android:theme="@style/MyEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-40dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/userDob"
+            app:layout_constraintStart_toEndOf="@+id/userDob"
+            app:layout_constraintTop_toTopOf="@+id/userDob" />
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp36"
+            android:fontFamily="@font/futura_regulr"
+            android:gravity="center"
+            android:text="BACK"
+            android:textColor="@color/primary_grey"
+            android:textSize="@dimen/dp16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            style="@style/ButtonInactive"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp32"
+            android:height="@dimen/margin_10"
+            android:clickable="false"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
